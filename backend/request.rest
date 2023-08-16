@@ -1,0 +1,48 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjpudWxsLCJlbWFpbCI6ImVtYWlsMTJAZ21haWwuY29tIiwiaWF0IjoxNjkyMTE3NzYyLCJleHAiOjE2OTIxMTc3ODJ9.pfTuFJ-z3CA9_iNZ9FnMjdlHhLXSe6bd4VCrv6K1eIo
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "username": "waldikaasd",
+    "email": "emai2l12@gmail.com",
+    "password": "1233",
+    "confPassword": "1233",
+    "first_name": "waldika",
+    "last_name": "irawan",
+    "telephone": "085695329450",
+    "address": "Pondok aren",
+    "city": "Tangerang Selatan",
+    "province": "Banten",
+    "country": "Indonesia"
+
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "email12@gmail.com",
+    "password": "1233"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
+
+###
+GET http://localhost:5000/artikel
+
+###
+POST http://localhost:5000/artikel
+Content-Type: application/json
+
+{
+    "judul": "Lorem Ipsum",
+    "isiArtikel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt semper urna, eu bibendum quam accumsan non. Aenean eget ligula ac elit sagittis faucibus a at libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur mauris arcu, volutpat et eleifend quis, ultrices eget nibh. In commodo velit a sagittis semper. Fusce pulvinar tempus ultrices. Sed ultricies nunc a ipsum mollis, at volutpat diam pharetra. Morbi nibh metus, faucibus vel blandit a, ornare at ante. Nullam ullamcorper ultricies arcu, non pharetra diam sodales et. Nam vel tempor justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pulvinar fringilla lectus, sed venenatis ligula sagittis in. Quisque vulputate, nibh sit amet facilisis vulputate, enim augue mollis odio, eget tincidunt sapien felis a ipsum. Nam eget mi vestibulum, cursus elit nec, bibendum nunc."
+}
